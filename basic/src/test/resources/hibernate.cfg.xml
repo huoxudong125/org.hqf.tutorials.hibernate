@@ -51,6 +51,11 @@
 			路径书写: 填写src下的路径
 		 -->
 		<mapping resource="org/hqf/tutorials/hibernate/domain/Customer.hbm.xml" />
-		
+		<mapping resource="org/hqf/tutorials/hibernate/domain/Generator/CustomerGeneratorIdentity.hbm.xml" />
+		<mapping resource="org/hqf/tutorials/hibernate/domain/Generator/CustomerGeneratorIncrement.hbm.xml" />
+		<mapping resource="org/hqf/tutorials/hibernate/domain/Generator/CustomerGeneratorNative.hbm.xml" />
+		<mapping resource="org/hqf/tutorials/hibernate/domain/Generator/CustomerGeneratorUuid.hbm.xml" />
+		<mapping resource="org/hqf/tutorials/hibernate/domain/Generator/CustomerGeneratorAssigned.hbm.xml" />
+
 	</session-factory>
 </hibernate-configuration>

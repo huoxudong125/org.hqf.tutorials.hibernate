@@ -3,12 +3,13 @@ import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 import org.hqf.tutorials.hibernate.domain.Customer;
+import org.junit.Assert;
 import org.junit.Test;
 
 public class HelloWorld {
     @Test
     //保存客户
-    public void fun1(){
+    public void Add() {
         Configuration conf = new Configuration().configure();
 
         SessionFactory sessionFactory = conf.buildSessionFactory();
@@ -27,4 +28,38 @@ public class HelloWorld {
         session.close();
         sessionFactory.close();
     }
+
+    @Test
+    public void GetAll() {
+        Configuration conf = new Configuration().configure();
+
+        SessionFactory sessionFactory = conf.buildSessionFactory();
+
+        Session session = sessionFactory.openSession();
+
+//
+
+        session.close();
+        sessionFactory.close();
+    }
+
+    @Test
+    public void Get() {
+        Configuration conf = new Configuration().configure();
+
+        SessionFactory sessionFactory = conf.buildSessionFactory();
+
+        Session session = sessionFactory.openSession();
+
+        Customer customer = session.get(Customer.class, 1L);
+
+        Assert.assertNotNull(customer);
+
+        System.out.println("customer = " + customer);
+
+        session.close();
+        sessionFactory.close();
+    }
+
+
 }
