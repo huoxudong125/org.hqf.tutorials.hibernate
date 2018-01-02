@@ -20,4 +20,8 @@ flush privileges;
 [CentOS 7 下开启Mysql-5.7.19远程访问](http://blog.csdn.net/u010758410/article/details/76381632)   
 
 
-[Hibernate ORM 5.1 User Guide](https://docs.jboss.org/hibernate/orm/5.1/userguide/html_single/Hibernate_User_Guide.html#mapping-types)        
+[Hibernate ORM 5.1 User Guide](https://docs.jboss.org/hibernate/orm/5.1/userguide/html_single/Hibernate_User_Guide.html#mapping-types)    
+
+
+https://docs.jboss.org/hibernate/stable/ogm/reference/en-US/html_single/#preface
+    

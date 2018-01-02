@@ -10,7 +10,8 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>basic</module>
-        <!--<module>crm</module>-->
+        <module>advance</module>
+        <module>crm</module>
     </modules>
 
     <properties>

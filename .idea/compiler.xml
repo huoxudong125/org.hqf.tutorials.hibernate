@@ -6,11 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="advance" />
         <module name="basic" />
         <module name="crm" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="advance" target="1.8" />
       <module name="basic" target="1.8" />
       <module name="crm" target="1.8" />
       <module name="parent" target="1.8" />
