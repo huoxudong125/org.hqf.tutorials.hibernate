@@ -29,6 +29,8 @@ public class HibernateUtils {
 		
 		return session;
 	}
-
+	public static void main(String[] args) {
+		System.out.println(HibernateUtils.openSession());
+	}
 	
 }
